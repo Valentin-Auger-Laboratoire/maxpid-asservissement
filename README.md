@@ -2,6 +2,9 @@
 
 🇫🇷 [Français](#français) · 🇬🇧 [English](#english)
 
+**▶ Démo web / Web demo :** https://valentin-auger-laboratoire.github.io/portfolio/demos/maxpid/
+Loi entrée-sortie interactive, démarrage du moteur et boucle fermée P/PI sur l'angle du bras (ajout de 2026). / Interactive input-output law, motor start-up and P/PI closed loop on the arm angle (added in 2026).
+
 ![Loi entrée-sortie du bras](images/loi-entree-sortie.png)
 
 ---
