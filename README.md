@@ -20,6 +20,17 @@ En 2026, j'ai repris ces deux modèles et je les ai vérifiés avec des scripts 
 
 Le dépôt s'arrête à la modélisation : il ne contient pas de correcteur. Pour la boucle fermée, voir mon [régulateur PID](https://github.com/Valentin-Auger-Laboratoire/regulateur-pid).
 
+#### Le banc
+Photos du MaxPID du lycée, prises en novembre 2024 :
+
+| De face | Posé à plat | Le logiciel pendant un essai |
+|---|---|---|
+| ![Le banc MaxPID vu de face : moteur, vis, bras chargé et rapporteur](images/12-banc-face.jpg) | ![Le banc posé à plat sur la table](images/13-banc-dessus.jpg) | ![Logiciel : consigne 40,0°, position mesurée 38,6°](images/14-logiciel-consigne-40.jpg) |
+
+- **De face :** le moteur entraîne la vis, dont l'écrou fait tourner le bras chargé de masses.
+- **Posé à plat :** le poids du bras ne joue plus.
+- **Le logiciel :** consigne 40,0°, position mesurée 38,6°.
+
 ---
 
 ### 1. Cinématique du bras (janvier 2024)
@@ -125,7 +136,7 @@ Le script re-simule le moteur avec les valeurs de la fiche (Runge-Kutta 4). L'in
 docs/valeurs.md              longueurs, pas, fiche moteur, J supposée, équations
 scripts/loi_entree_sortie.py loi exacte, tableau, droite des moindres carrés (2026)
 scripts/simulation_moteur.py re-simulation du moteur, RK4, valeurs de la fiche (2026)
-images/                      schéma cinématique (SVG), réponses manuscrites, tableur, Simscape, graphiques
+images/                      photos du banc, schéma cinématique (SVG), réponses manuscrites, tableur, Simscape, graphiques
 ```
 Les scripts n'utilisent que Python 3 et, pour les graphiques, `matplotlib`.
 
@@ -139,6 +150,8 @@ Engineering science work in **CPGE TSI** (preparatory classes, January and May 2
 2. **motor:** a physical model of the DC motor in **Simscape** (MATLAB).
 
 In 2026 I revisited both models and checked them with Python scripts. All values and equations are in [`docs/valeurs.md`](docs/valeurs.md). The repository stops at modelling, with no controller; see my [PID controller](https://github.com/Valentin-Auger-Laboratoire/regulateur-pid) for the closed loop.
+
+**The bench** (photos taken at school in November 2024): front view, laid flat (the arm's weight no longer acts), and the software during a test (setpoint 40.0°, measured position 38.6°); see the table in the French section.
 
 ### 1. Arm kinematics
 Planar diagram (above), OA = 69.5 mm, OB = 82 mm, AC = 80 mm, screw pitch 4 mm/turn.
